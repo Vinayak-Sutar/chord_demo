@@ -69,11 +69,12 @@ vercel --prod
 ```
 
 Follow the prompts:
+
 - Set up and deploy? **Yes**
 - Which scope? **Your account**
 - Link to existing project? **No**
 - What's your project's name? **chords-extractor** (or any name)
-- In which directory is your code located? **./` (press Enter)
+- In which directory is your code located? \*\*./` (press Enter)
 - Want to override settings? **No**
 
 Wait for deployment... Done! 🎉
@@ -118,10 +119,13 @@ If you need to add environment variables (like different API keys):
 ## Troubleshooting
 
 ### Issue: "Page not found" on refresh
+
 **Solution**: The `vercel.json` file with rewrites is already configured. Make sure it's included in your repository.
 
 ### Issue: Build fails
-**Solution**: 
+
+**Solution**:
+
 ```bash
 # Clear cache and rebuild
 rm -rf node_modules build
@@ -130,22 +134,26 @@ npm run build
 ```
 
 ### Issue: Videos don't play
+
 **Solution**: Check that YouTube API key is valid. The current key in the code should work, but you can replace it with your own.
 
 ## Your Deployed Site
 
 After deployment, you'll get a URL like:
+
 - **Preview**: `https://chords-extractor-abc123.vercel.app`
 - **Production**: `https://chords-extractor.vercel.app`
 
 ## Updating the Deployment
 
 Whenever you push changes to your GitHub repository:
+
 1. Vercel automatically detects the push
 2. Builds the new version
 3. Deploys it automatically 🚀
 
 Or via CLI:
+
 ```bash
 vercel --prod
 ```
@@ -153,6 +161,7 @@ vercel --prod
 ## Performance Tips
 
 Your site is already optimized with:
+
 - ✅ Production build (minified JS/CSS)
 - ✅ Gzipped assets (71.93 KB main bundle)
 - ✅ Code splitting (React Player chunks)
@@ -162,6 +171,7 @@ Your site is already optimized with:
 ## Analytics (Optional)
 
 Enable Vercel Analytics:
+
 1. Go to your project dashboard
 2. Click **Analytics** tab
 3. Enable Analytics
@@ -170,6 +180,7 @@ Enable Vercel Analytics:
 ---
 
 **Need Help?**
+
 - Vercel Docs: https://vercel.com/docs
 - Vercel Support: support@vercel.com
 
